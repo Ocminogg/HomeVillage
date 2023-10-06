@@ -9,8 +9,8 @@ namespace TestXlab
     {
 		public Spawner spawner;
 		public CloudController cloudController;
-
-		private void Update()
+        public EquipmentExchange equipmentExchange;
+        private void Update()
 		{
 			if (Input.GetKeyDown(KeyCode.X))
 			{
@@ -27,7 +27,9 @@ namespace TestXlab
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
 				Debug.Log("Space key down");
-			}
+				equipmentExchange.Exchage();
+
+            }
 		}
 	}
 }

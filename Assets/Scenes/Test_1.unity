@@ -2008,6 +2008,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943765590059028, guid: e7489574cca6d4645a7019414b8288e8, type: 3}
   m_PrefabInstance: {fileID: 221895431}
   m_PrefabAsset: {fileID: 0}
+--- !u!33 &221927508 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 350799694408942398, guid: 0577306f947ebac4486c16bda41798b1, type: 3}
+  m_PrefabInstance: {fileID: 648544552}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &223226636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3831,6 +3836,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4931211907768612, guid: e88b7bb02ae149940a5a0cddf34fe370, type: 3}
   m_PrefabInstance: {fileID: 420546968}
   m_PrefabAsset: {fileID: 0}
+--- !u!33 &422470033 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 8435645324879952226, guid: c86589473eb08e040b9078d832a2d4b3, type: 3}
+  m_PrefabInstance: {fileID: 1146574076}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &457368148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5134,6 +5144,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4208458315195486, guid: c96016c34e7be62488e588470988ef5b, type: 3}
   m_PrefabInstance: {fileID: 600813583}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &603297037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603297038}
+  - component: {fileID: 603297039}
+  m_Layer: 0
+  m_Name: EquipmentExchange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603297038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603297037}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 83.01917, y: 26.537348, z: 45.34393}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &603297039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603297037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426fffab9734a00458e25e01f696d4af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  peoples:
+  - {fileID: 1977294629}
+  - {fileID: 422470033}
+  - {fileID: 2140021716}
+  - {fileID: 1397374148}
+  - {fileID: 221927508}
+  tools:
+  - {fileID: 4300000, guid: 017808b5a05937c4d87dfb2f5b02bc2b, type: 3}
+  - {fileID: 4300000, guid: ee8809e804fcc814ba55fe33f373281a, type: 3}
+  - {fileID: 4300004, guid: a84dc411a82bf8b43b867806726efddc, type: 3}
+  - {fileID: 4300000, guid: 370782fdfcf1fbe42b2cd21bf23903dd, type: 3}
 --- !u!1001 &605774406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6482,7 +6547,7 @@ MonoBehaviour:
   - {fileID: 1146574077}
   - {fileID: 885835524}
   - {fileID: 659539012}
-  moveSpeed: 10
+  moveSpeed: 50
   cloud: {fileID: 1022963113}
   targetFramerate: 60
 --- !u!4 &730913131
@@ -9154,6 +9219,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1767446352}
     m_Modifications:
+    - target: {fileID: -4173389172924967107, guid: bdf8e7438a7816543998181bd3067573, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1069567032315564, guid: bdf8e7438a7816543998181bd3067573, type: 3}
       propertyPath: m_Name
       value: rpgpp_lt_terrain_grass_01 (11)
@@ -9322,7 +9391,7 @@ Transform:
   m_GameObject: {fileID: 1035923078}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 77.60231, y: 30.407879, z: 62.971127}
+  m_LocalPosition: {x: 60.89, y: 40.04, z: -45.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12332,6 +12401,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4631977158232566, guid: 6dcae7204dd466c4c862bc640ea7c02e, type: 3}
   m_PrefabInstance: {fileID: 1391805395}
   m_PrefabAsset: {fileID: 0}
+--- !u!33 &1397374148 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 350799694408942398, guid: 0577306f947ebac4486c16bda41798b1, type: 3}
+  m_PrefabInstance: {fileID: 6889717}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1409503694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14342,6 +14416,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5859693740193068444, guid: 8636a621b3ea3fb4a902553949b6adab, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: ee8809e804fcc814ba55fe33f373281a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15661,6 +15739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 1035923079}
   cloudController: {fileID: 730913130}
+  equipmentExchange: {fileID: 603297039}
 --- !u!4 &1792627328
 Transform:
   m_ObjectHideFlags: 0
@@ -15684,6 +15763,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1767446352}
     m_Modifications:
+    - target: {fileID: -6621705235930514891, guid: 6dcae7204dd466c4c862bc640ea7c02e, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1694894201118028, guid: 6dcae7204dd466c4c862bc640ea7c02e, type: 3}
       propertyPath: m_Name
       value: rpgpp_lt_hill_small_02 (9)
@@ -17655,6 +17738,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4631977158232566, guid: 6dcae7204dd466c4c862bc640ea7c02e, type: 3}
   m_PrefabInstance: {fileID: 1977149303}
   m_PrefabAsset: {fileID: 0}
+--- !u!33 &1977294629 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 5859693740193068444, guid: 8636a621b3ea3fb4a902553949b6adab, type: 3}
+  m_PrefabInstance: {fileID: 1659989084}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2008524186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18338,6 +18426,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
   m_PrefabInstance: {fileID: 2118806274}
   m_PrefabAsset: {fileID: 0}
+--- !u!33 &2140021716 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 235310315608403328, guid: 210ea86c955a5db419b0ad0a777d2bbe, type: 3}
+  m_PrefabInstance: {fileID: 659539011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -18350,3 +18443,4 @@ SceneRoots:
   - {fileID: 1792627328}
   - {fileID: 1035923080}
   - {fileID: 730913131}
+  - {fileID: 603297038}
