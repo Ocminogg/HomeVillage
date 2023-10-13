@@ -2,34 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TestXlab
+namespace Golf
 {
 
     public class PlayerController : MonoBehaviour
     {
-		public Spawner spawner;
-		public CloudController cloudController;
-        public EquipmentExchange equipmentExchange;
-        private void Update()
+		private void Update()
 		{
-			if (Input.GetKeyDown(KeyCode.X))
+			if (Input.GetMouseButtonDown(0))
 			{
-				Debug.Log("X key down");
-				spawner.Spawn();
+				Debug.Log("Mouse down!!!");
 			}
-
-			if (Input.GetKeyDown(KeyCode.Z))
-			{
-				Debug.Log("Z key down");
-				cloudController.Action();
-			}
-
-			if (Input.GetKeyDown(KeyCode.Space))
-			{
-				Debug.Log("Space key down");
-				equipmentExchange.Exchage();
-
-            }
 		}
 	}
 }
